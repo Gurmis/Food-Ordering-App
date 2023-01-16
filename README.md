@@ -1,3 +1,3 @@
 ### Food-Ordering-App
 ---
-- coded to practice pure JS skills
+- coded to practice vanilla JS skills
