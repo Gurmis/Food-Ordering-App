@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="screen">
+        <header class="container">
+            <h3>Gurmis's Diner</h3>
+            <h5>Tasty pizza's and burger's</h5>
+        </header>
+        <main>
+            <div class="content container" id="content">
+                <section class="items" id="items">
+                </section>
+                <section class="summary" id="summary">
+                </section>
+            </div>
+        </main>
+    </div>
+    <div class="checkoutModal container" id="checkoutModal">
+        <form class="checkoutForm" id="checkoutForm">
+            <h3>Enter card details</h3>
+            <input type="text" name="cardName" id="cardName" required placeholder="Enter your name">
+            <input type="number" name="cardNumber" id="cardNumber" required placeholder="Enter card number">
+            <input type="number" name="cvv" id="cvv" required placeholder="Enter CVV">
+            <button class="completeBtn">Pay</button>
+        </form>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
