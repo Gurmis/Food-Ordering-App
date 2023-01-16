@@ -110,17 +110,17 @@ checkoutForm.addEventListener('submit', (e) => {
     let newPaymentObj = {
         set name(name) { this.cardName = name },
         set number(number) { this.cardNumber = number },
-        set cvv(cvv) { this.cardCvv = cvv }
+        set cvc(cvc) { this.cardCvc = cvc }
     };
     const newFormData = new FormData(checkoutForm)
 
     newPaymentObj.cardName = newFormData.get('cardName')
     newPaymentObj.cardNumber = newFormData.get('cardNumber')
-    newPaymentObj.cvv = newFormData.get('cvv')
+    newPaymentObj.cvc = newFormData.get('cvc')
 
     document.getElementById('cardName').value = ''
     document.getElementById('cardNumber').value = ''
-    document.getElementById('cvv').value = ''
+    document.getElementById('cvc').value = ''
 
     summaryEl.innerHTML = `<div class="thankyou">Thank you ${newPaymentObj.cardName.split(' ')[0]}, your order is on it's way!</div>`
     checkoutModal.style.display = 'none'
